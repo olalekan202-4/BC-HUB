@@ -2,26 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="keywords" content="BC-HUB, Portfolio, Technology, Innovation" />
+    <meta name="author" content="BC-HUB" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#008D27" />
+    <meta name="robots" content="index, follow" />
+    <meta name="google-site-verification" content="your-verification-code" />
+    <meta name="description" content="BC-HUB Portfolio - Empowering Innovation Through Tech Solutions" />
     <title>BC-HUB Portfolio</title>
+    <link rel="shortcut icon" href="./image/bchublogo green 1.png" type="./image/bchublogo green 1.png">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#button").click(function(){
+    $("#nav").toggle();
+  });
+});
+</script>
   </head>
   <body class="bg-[#ECFDF5] font-inter">
-    <nav class="flex justify-between bg-white p-1 align-items-lg-center">
-      <div class="flex items-center gap-3 mx-15 my-2">
-        <img src="./image/bchublogo green 1.png" alt="logo" />
-        <div class="text-[#008D27] font-[700]">BC HUB PORTFOLIO</div>
+    <nav class="fixed top-0 left-0 right-0 z-50">
+      <div class="flex justify-between bg-white p-1 align-items-lg-center">
+        <div class="flex items-center gap-3 mx-15 my-2">
+          <img src="./image/bchublogo green 1.png" alt="logo" />
+          <div class="text-[#008D27] font-[700]">BC HUB PORTFOLIO</div>
+        </div>
+        <div class="md:flex  hidden text-center items-center text-[#8B8B8B] gap-8 mx-18 font-[500] text-[12px] my-2">
+          <div class=" hover:bg-[#008D27] hover:text-white p-2 rounded-md  text-center items-center  " ><a href="#about">About Us</a></div>
+          <div class=" hover:bg-[#008D27] hover:text-white p-2 rounded-md  text-center items-center  " ><a href="">Contacts</a></div>
+          <div class=" hover:bg-[#008D27] hover:text-white p-2 rounded-md  text-center items-center  " ><a href="">Academy</a></div>
+          <div class=" hover:bg-[#008D27] hover:text-white p-2 rounded-md  text-center items-center  " ><a href="#projects">Projects</a></div>
+        </div>
+        <p id="button" class="md:hidden text-center items-center my-2 pt-2 mr-10"><img class="h-6 w-6" src="./image/bars-solid.svg" alt=""></p>
       </div>
-      <div class="flex text-[#8B8B8B] gap-8 mx-18 font-[500] text-[12px] my-2">
-        <div><a href="">About Us</a></div>
-        <div><a href="">Contacts</a></div>
-        <div><a href="">Academy</a></div>
-        <div><a href="">Projects</a></div>
+      <div id="nav" class="md:hidden hidden text-end bg-white space-y-5 text-[#8B8B8B] gap-8 border-t-1 pb-5  font-[500] text-[12px] ">
+        <div class=" hover:bg-[#008D27] hover:text-white px-10 " ><a href="#about">About Us</a></div>
+        <div class=" hover:bg-[#008D27] hover:text-white px-10 " ><a href="">Contacts</a></div>
+        <div class=" hover:bg-[#008D27] hover:text-white px-10 " ><a href="">Academy</a></div>
+        <div class=" hover:bg-[#008D27] hover:text-white px-10 " ><a href="#projects">Projects</a></div>
       </div>
     </nav>
+
     <main>
-      <div class="flex p-14 items-center gap-10 mx-18 justify-around">
-        <div class="flex-column w-100">
+      <div class="flex p-14 items-center gap-10 mt-[10%] mx-5 md:mx-18 justify-around">
+        <div class="flex-column w-full md:w-100">
           <div class="font-[700] text-[2.5em] text-[#484848]">
             Empowering Innovation Through Tech Solutions
           </div>
@@ -55,7 +80,7 @@
           What sets us apart from the rest
         </div>
       </div>
-      <div class="flex justify-center items-center gap-10 p-5">
+      <div class="flex flex-wrap justify-center items-center gap-10 p-5">
         <div class="flex-column w-70 bg-white p-4">
           <img src="./image/famicons_bulb-sharp.png" alt="light" class="w-7" />
           <div class="text-[#6D7681] font-[700]">Innovative Solutions</div>
@@ -83,8 +108,8 @@
           </div>
         </div>
       </div>
-      <div class="bg-[white] flex items-center justify-center gap-5">
-        <div class="flex-column bg-[#ECFDF5] w-120 p-10 my-15">
+      <div class="bg-[white] flex flex-wrap items-center justify-center gap-5">
+        <div class="flex-column bg-[#ECFDF5] md:w-120 w-[400px] p-10 my-15">
           <img
             src="./image/solar_transmission-circle-linear.png"
             alt="light"
@@ -96,7 +121,7 @@
             growth and digital transformation in an ever-evolving landscape.
           </div>
         </div>
-        <div class="flex-column bg-[#ECFDF5] w-120 p-10 my-15">
+        <div class="flex-column bg-[#ECFDF5] md:w-120 w-[400px] p-10 my-15">
           <img
             src="./image/solar_transmission-circle-linear (1).png"
             alt="light"
@@ -118,7 +143,7 @@
           Meet the experts behind our success
         </div>
       </div>
-      <div class="flex justify-center items-center gap-10 p-5">
+      <div class="flex flex-wrap justify-center items-center gap-10 p-5">
         <div
           class="flex-column w-60 bg-white border-1 border-white rounded-lg border-solid shadow-lg"
         >
@@ -168,7 +193,7 @@
             Insights and updates from our experts
           </div>
         </div>
-        <div class="flex justify-center items-center gap-15">
+        <div class="flex flex-wrap justify-center items-center gap-15">
           <div
             class="flex-column w-60 bg-white border-1 border-white rounded-lg border-solid shadow-2xl"
           >
@@ -233,7 +258,7 @@
         </div>
       </div>
       <div
-        class="flex-column justify-center items-center bg-white border-1 border-white rounded-lg border-solid shadow-2xl mx-auto h-32 w-180 mb-5"
+        class="flex-column justify-center items-center bg-white border-1 border-white rounded-lg border-solid shadow-2xl mx-auto h-32 md:w-180 w-[400px] mb-5"
       >
         <div class="flex justify-between items-center px-8">
           <p class="text-[11px] font-[700] text-[#484848]">
@@ -241,13 +266,13 @@
           </p>
           <img src="./image/ri_arrow-drop-down-line.png" alt="" class="w-15" />
         </div>
-        <p class="text-[11px] px-8 text-[#6D7681] w-120">
+        <p class="text-[11px] px-8 text-[#6D7681] md:w-120 w-[400px]">
           We offer a comprehensive range of digital services including web
           development, mobile app digital marketing and cyber security solutions
         </p>
       </div>
       <div
-        class="flex-column justify-center items-center bg-white border-1 border-white rounded-lg border-solid shadow-2xl mx-auto h-32 w-180 mb-5"
+        class="flex-column justify-center items-center bg-white border-1 border-white rounded-lg border-solid shadow-2xl mx-auto h-32 md:w-180 w-[400px] mb-5"
       >
         <div class="flex justify-between items-center px-8">
           <p class="text-[11px] font-[700] text-[#484848]">
@@ -255,13 +280,13 @@
           </p>
           <img src="./image/ri_arrow-drop-down-line.png" alt="" class="w-15" />
         </div>
-        <p class="text-[11px] px-8 text-[#6D7681] w-120">
+        <p class="text-[11px] px-8 text-[#6D7681] md:w-120 w-[400px]">
           Project timelines vary based on complexity and scope. We provide
           detailed timeline during our initial consultation.
         </p>
       </div>
       <div
-        class="flex-column justify-center items-center bg-white border-1 border-white rounded-lg border-solid shadow-2xl mx-auto h-32 w-180 mb-5"
+        class="flex-column justify-center items-center bg-white border-1 border-white rounded-lg border-solid shadow-2xl mx-auto h-32 md:w-180 w-[400px] mb-5"
       >
         <div class="flex justify-between items-center px-8">
           <p class="text-[11px] font-[700] text-[#484848]">
@@ -269,13 +294,13 @@
           </p>
           <img src="./image/ri_arrow-drop-down-line.png" alt="" class="w-15" />
         </div>
-        <p class="text-[11px] px-8 text-[#6D7681] w-120">
+        <p class="text-[11px] px-8 text-[#6D7681] md:w-120 w-[400px]">
           Yes, we provide ongoing support and maintenance services to ensure
           your solution continues to perform optimally.
         </p>
       </div>
       <div
-        class="flex-column justify-center items-center bg-white border-1 border-white rounded-lg border-solid shadow-2xl mx-auto h-32 w-180 mb-5"
+        class="flex-column justify-center items-center bg-white border-1 border-white rounded-lg border-solid shadow-2xl mx-auto h-32 md:w-180 w-[400px] mb-5"
       >
         <div class="flex justify-between items-center px-8">
           <p class="text-[11px] font-[700] text-[#484848]">
@@ -283,7 +308,7 @@
           </p>
           <img src="./image/ri_arrow-drop-down-line.png" alt="" class="w-15" />
         </div>
-        <p class="text-[11px] px-8 text-[#6D7681] w-120">
+        <p class="text-[11px] px-8 text-[#6D7681] md:w-120 w-[400px]">
           We offer flexible pricing models based on project requirements.
           Contact us for a detailed quote.
         </p>
@@ -297,38 +322,50 @@
             Comprehensive solutions for your digital needs
           </div>
         </div>
-        <div class="flex justify-center items-center gap-10 mb-5">
+        <div class="flex flex-wrap justify-center items-center gap-10 mb-5">
           <div
-            class="flex-column w-60 bg-white border-1 border-white rounded-lg border-solid shadow-2xl"
+            class="flex-column md:w-[500px] w-[400px]  p-5 bg-white border-1 border-white rounded-lg border-solid shadow-lg "
           >
-            <img src="./image/Vector (1).png" alt="" />
+            <img class="my-4 h-12 w-12" src="./image/Vector (1).png" alt="" />
             <div class="text-[#6D7681] font-[700]">Web & Mobile Development</div>
           <div class="text-[#6D7681] text-[12px]">
             Custom solutions built with cutting-edge technologies for web and mobile platforms.
           </div>
           </div>
           <div
-            class="flex-column w-60 bg-white border-1 border-white rounded-lg border-solid shadow-2xl"
+            class="flex-column md:w-[500px] w-[400px]  p-5 bg-white border-1 border-white rounded-lg border-solid shadow-lg "
           >
-            <img src="./image/mdi_code.png" alt="" />
+            <img class="my-4 h-12 w-12" src="./image/mdi_code.png" alt="" />
+                        <div class="text-[#6D7681] font-[700]">Digital Marketing</div>
+          <div class="text-[#6D7681] text-[12px]">
+            Strategic digital marketing solutions to boost your online presence and reach.
+          </div>
           </div>
         </div>
-        <div class="flex justify-center items-center gap-10">
+        <div class="flex flex-wrap justify-center items-center gap-10">
           <div
-            class="flex-column w-60 bg-white border-1 border-white rounded-lg border-solid shadow-2xl"
+            class="flex-column md:w-[500px] w-[400px]  p-5 bg-white border-1 border-white rounded-lg border-solid shadow-lg "
           >
-            <img src="./image/ic_baseline-security.png" alt="" />
+            <img class="my-4 h-12 w-12" src="./image/ic_baseline-security.png" alt="" />
+                        <div class="text-[#6D7681] font-[700]">Cybersecurity & Data Analysis</div>
+          <div class="text-[#6D7681] text-[12px]">
+            Robust security solutions and data-driven insights for your business.
+          </div>
           </div>
           <div
-            class="flex-column w-60 bg-white border-1 border-white rounded-lg border-solid shadow-2xl"
+            class="flex-column md:w-[500px] w-[400px]  p-5 bg-white border-1 border-white rounded-lg border-solid shadow-lg "
           >
-            <img src="./image/mdi_design.png" alt="" />
+            <img class="my-4 h-12 w-12" src="./image/mdi_design.png" alt="" />
+                        <div class="text-[#6D7681] font-[700]">UI/UX Design & Tech Projects</div>
+          <div class="text-[#6D7681] text-[12px]">
+            User-centered design solutions that create engaging digital experiences.
+          </div>
           </div>
         </div>
       </section>
 
       <!-- Featured Projects -->
-       <section class=" text-[14px] ">
+       <section class=" text-[14px] font-inter ">
         <div class=" py-10  ">
           <div class="text-[#484848] text-center text-[30px] font-[700]">
             Featured Projects
@@ -408,13 +445,13 @@
        </section>
 
        <!-- popular projects -->
-       <section class=" justify-center items-center gap-10 mb-5 h-[1318px] overflow-hidden">
+       <section id="projects" class=" justify-center items-center gap-10 mb-5 h-[1318px] overflow-hidden">
         <div>
           <div class="m-10">
             <h2 class="text-[#484848] text-center text-[30px] font-[700]">Popular Projects</h2>
             <p class="text-[#6D7681] text-center text-[12px] font-[500]">Discover our latest work and innovations</p>
           </div>
-          <div class="flex flex-wrap justify-center gap-10 ">
+          <div class="flex flex-wrap justify-center gap-15 ">
             <div class="bg-white w-[500px] h-[500px] rounded-sm">
               <div>
                 <img src="./image/templates.png" alt="pic">
@@ -492,14 +529,14 @@
        </section>
         
        <!-- About us  -->
-       <section class="bg-white py-5">
-        <div class=" md:flex justify-around items-center  gap-10 m-20">
-          <div class="md:w-[50%] text-center">
+       <section id="about" class="bg-white py-5">
+        <div class=" md:flex justify-around items-center  gap-10 m-10 md:m-20">
+          <div class="md:w-[50%] text-start">
             <h2 class="text-[#484848] text-start text-[35px] font-[800]" >About Us</h2>
-            <p class=" text-start my-5">Empowering businesses with innovative tech solutions</p>
-            <div>
+            <p class=" text-start my-5 font-inter">Empowering businesses with innovative tech solutions</p>
+            <p class="font-inter space-0 ">
               At BC HUB Portfolio, we are a dynamic and forward-thinking organization dedicated to empowering innovation through cutting-edge technology solutions. Established with a vision to transform industries and enhance lives, we have grown into a trusted leader in the tech landscape, delivering excellence across a wide range of services. Our journey began with a passion for leveraging technology to solve real-world challenges, and today, we stand as a beacon of creativity, expertise, and reliability for businesses and communities alike.
-            </div>
+            </p>
             <div class="flex justify-around items-center gap-10 my-5">
               <div>
                 <p class=" text-[#008D27] font-bold text-[20px] ">50+</p>
@@ -522,7 +559,7 @@
        </section>
 
        <!-- client Testimonials -->
-        <section>
+        <section class="font-inter">
           <div>
             <div>
               <h2 class="text-[#484848] text-center text-[30px] font-[700]">Client Testimonials</h2>
@@ -556,7 +593,129 @@
             </div>
           </div>
         </section>
+        <section class="bg-white py-5 font-inter">
+          <div>
+            <h2 class="text-[#484848] text-center text-[30px] font-[700]">Get in Touch</h2> 
+            <p class="text-[#6D7681] text-center text-[12px] font-[500]">Have questions about our courses or need assistance? We’re here to help!</p>
+            <div class="flex justify-center items-center gap-10 m-10 flex-wrap">
+              <div class="border-2 border-gray-300 rounded-md  w-[400px] md:w-[500px] shadow-lg">
+                <form action="" method="post" >
+                  <div class="flex justify-center items-center gap-5 m-5 flex-wrap">
+                    <div class="flex-column w-[500px] p-5">
+                      <label for="name" class="text-[#484848] font-bold">Name</label>
+                      <input type="text" id="name" name="name" class="border border-gray-300 rounded-md p-2 w-full" required>
+                    </div>
+                    <div class="flex-column w-[500px] p-5">
+                      <label for="email" class="text-[#484848] font-bold">Email</label>
+                      <input type="email" id="email" name="email" class="border border-gray-300 rounded-md p-2 w-full" required>
+                    </div>
+                  </div>
+                  <div class="flex justify-center items-center gap-5 mx-5 flex-wrap">
+                    <div class="flex-column w-[500px] p-5">
+                      <label for="message" class="text-[#484848] font-bold">Message</label>
+                      <textarea id="message" name="message" rows="4" class="border border-gray-300 rounded-md p-2 w-full"></textarea>
+                    </div>
+                  </div>
+                  <div class="w-[400px] md:w-[500px] px-10 pb-5 ">
+                   <button type="submit" class="bg-[#008D27] text-white w-full  p-2 rounded-md">Send Message</button>
+                  </div>
+                </form>
+              </div>
+              <div class="space-y-10  ">
+                <div class="border-2 border-gray-300 p-5 rounded-md shadow-lg space-y-5  w-[400px] md:w-[500px]">
+                  <h1 class="font-bold">Contact Information</h1>
+                  <div class="flex gap-5 ">
+                    <img src="./image/Frame 90 (1).png" alt="">
+                    <div>
+                      <p class="font-bold">Address</p>
+                      <p>123 Tech94025 Street, Silicon Valley, CA </p>
+                    </div>
+                  </div>
+                  <div class="flex gap-5 ">
+                    <img src="./image/Frame 90 (2).png" alt="">
+                    <div>
+                      <p class="font-bold">Phone</p>
+                      <p>+1 (123) 456-7890</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-5 ">
+                    <img src="./image/Frame 90 (3).png" alt="">
+                    <div>
+                      <p class="font-bold">Email</p>
+                      <p>info@bchub.com</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-2 border-gray-300 p-5 rounded-md shadow-lg space-y-5  w-[400px] md:w-[500px]">
+                  <h2 class="font-bold ">Business Hours</h2>
+                  <div class="flex justify-between ">
+                    <p>Monday - Friday</p>
+                    <p>9:00 AM - 6:00 PM</p>
+                  </div>
+                  <div class="flex justify-between ">
+                    <p>Saturday</p>
+                    <p>10:00 AM - 4:00 PM</p>
+                  </div>
+                  <div class="flex justify-between ">
+                    <p>Sunday</p>
+                    <p>Closed</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="bg-[#064E3B] text-white py-10 font-inter">
+          <div>
+            <div class="flex justify-center items-center gap-20 m-10 flex-wrap">
+              <div>
+                <h1 class="font-bold text-2xl my-5"> BC HUB</h1>
+                <p>Empowering careers through</p>
+                <p>expert-led online education in</p>
+                <p>technology and development.</p>
+              </div>
+              <div>
+                <h2 class="font-bold text-xl my-5">Quick Links</h2>
+                <P><a class="hover:underline" href="">About Us</a></P>
+                <P><a class="hover:underline" href="">Academy</a></P>
+                <P><a class="hover:underline" href="">Testimonies</a></P>
+                <P><a class="hover:underline" href="">Contacts</a></P>
+              </div>
+              <div>
+                <h2 class="font-bold text-xl my-5">Contact Us</h2>
+                <div class="flex my-3 gap-5">
+                  <img class="h-6 w-6" src="./image/ic_baseline-email.png" alt="">
+                  <p>info@bchub.co</p>
+                </div>
+                <div class="flex my-3 gap-5">
+                  <img class="h-6 w-6" src="./image/ic_baseline-phone.png" alt="">
+                  <p>+1 (234) 567-890</p>
+                </div>
+              </div>
+              <div>
+                <h2 class="font-bold text-xl my-5">Follow Us</h2>
+                <div class="flex gap-3 ">
+                  <img class="h-10 w-10 " src="./image/ic_baseline-facebook.png" alt="Facebook">
+                  <img class="h-10 w-10 " src="./image/prime_twitter.png" alt="Twitter">
+                  <img class="h-10 w-10 " src="./image/mingcute_instagram-fill.png" alt="Instagram">
+                  <img class="h-10 w-10 " src="./image/linkin.png" alt="LinkedIn">
+                </div>
+                <div class="mt-10">
+                  <h1>Newsletter</h1>
+                  <div class="flex   rounded-sm ">
+                    <input type="email" class="placeholder:p-2 rounded-l-sm bg-white text-black p-2 placeholder:text-gray-700"  name="email" placeholder="your email " id="">
+                    <img class="bg-[#008D27] h-10 w-10 rounded-r-sm " src="./image/mingcute_send-fill.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center ">
+              <p>©2025 BENCODES HUB. All rights reserved</p>
+            </div>
+          </div>
+        </footer>
 
     </main>
   </body>
+  
 </html>
